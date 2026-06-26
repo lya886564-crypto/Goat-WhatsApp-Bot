@@ -1,0 +1,53 @@
+{
+  "botName": "GoatWpBot",
+  "prefix": ".",
+  "skipSync": true,
+  "admins": [
+    "249120591509@s.whatsapp.net"
+  ],
+  "dashboard": {
+    "enabled": true,
+    "port": 3000,
+    "adminPassword": "admin123",
+    "sessionTimeout": 1800000,
+    "refreshInterval": 3000,
+    "otpEnabled": true,
+    "otpExpiry": 300000,
+    "maxOtpAttempts": 3,
+    "blockDuration": 900000,
+    "adminNumbers": [
+      "249120591509"
+    ]
+  },
+  "database": {
+    "type": "json",
+    "mongodb": {
+      "uri": "mongodb://localhost:27017/whatsapp_bot"
+    },
+    "mysql": {
+      "host": "localhost",
+      "user": "root",
+      "password": "password",
+      "database": "whatsapp_bot"
+    },
+    "sqlite": {
+      "path": "database.db"
+    }
+  },
+  "apikeys": {
+    "anbu": "",
+    "anbu_note": "Get anbu API key from https://api.anbuinfosec.xyz",
+    "gemini": "",
+    "gemini_note": "Get Gemini API key from https://ai.google.com/auth"
+  },
+  "simiLang": "en",
+  "logCommands": true,
+  "antiInbox": false,
+  "whitelist": [],
+  "blacklist": [],
+  "permissions": {
+    "adminOnly": false,
+    "moderatorCommands": [],
+    "bannedUsers": []
+  }
+}
